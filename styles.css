@@ -1,0 +1,960 @@
+
+  @font-face {
+    font-family: "Advent Sans"; /* This is the name you'll use to reference the font */
+    src: url("AdventSans-Logo.otf") format("woff2"); /* Preferred format for modern browsers */
+    /* Optional: Add additional formats for wider browser compatibility  */
+    /* src: url("/fonts/font-file.ttf") format("truetype");  */
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Advent Sans", sans-serif; 
+    background-color:#eeeeee !important;
+
+  }
+  .nav {
+    background-color:whitesmoke;
+    color:#003B5C;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between; /* Align items to the left and right */
+    align-items: center;
+    width:90%;
+    
+    
+}
+/* Show the navigation links when menu icon is clicked */
+    
+
+/* Rotate bars to create an X icon when menu is active */
+
+
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+
+
+
+.logo-and-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    background-color: #003B5C;
+    margin-left:40px;
+}
+.logo-and-heading img{
+  width:200px;
+  height:200px;
+
+}
+
+.logo {
+    width: 80px; /* adjust the width according to your logo size */
+    height: 80px; /* adjust the height according to your logo size */
+    margin-right: 20px;
+}
+
+
+.logo-and-heading h1 {
+  margin-right: 10px; /* Adjust margin as needed */
+  color:whitesmoke;
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+
+
+
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+/* Default styles for navigation links */
+.nav-links {
+  display: flex;
+  justify-content: center; /* Center the links horizontally */
+}
+
+.nav-links ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove dnefault padding */
+  margin: 0; /* Remove default margin */
+}
+
+.nav-links li {
+  margin: 0 10px; /* Add spacing between each link */
+}
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+
+@media screen and (max-width: 768px) {
+  .logo-and-heading {
+      display: block; /* Hide the navigation links on smaller screens */
+      align-items:center;
+  }
+  
+}
+@media screen and (max-width: 768px) {
+  .nav-links {
+      display:none;/* Hide the navigation links on smaller screens */
+      width:0%;
+  }
+  
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    position: relative; /* Set position relative */
+}
+
+
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px;
+    
+    
+  }
+  
+  .nav li {
+    margin-right: 20px;
+    
+  }
+  .nav li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .nav li a:hover {
+    color: orangered;
+  }
+  .nav ul li a.active {
+     /* Change color of active link */
+    font-weight: bold; /* Optionally, make the font bold */
+}
+.social-links {
+  position: absolute; /* Set position absolute */
+  top: 0; /* Align to the top */
+  right: 20%;
+   /* Align to the right */
+   
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 10px;
+}
+
+.social-links a:last-child {
+  margin-right: 0;
+}
+  
+  
+  
+  
+        /* Styles for the overlay */
+.overlay {
+  display: none;
+  position:absolute;
+  top: 0;
+  right:0;
+  width:100%;
+  height: 100%;
+  background-color: rgba(6, 3, 51, 1.0); /* Semi-transparent black */
+  z-index: 1000;
+}
+@media screen and (max-width: 768px) {
+  .overlay {
+      display: none; /* Show the overlay on smaller devices */
+  }
+}
+
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width:100%;
+  height:100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay-content a.active{
+  font-weight: bold;
+}
+.overlay-content a:hover{
+  color:orange;
+
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo-container img {
+  width: 50px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Adjust spacing between logo and text */
+}
+
+.logo-text {
+  font-size: 24px;
+  color: white;
+}
+
+.overlay-content a {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Styles for the menu icon */
+.menu-icon {
+  display:block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width:100%;
+  cursor: pointer;
+  z-index: 2000; /* Ensure menu icon is above overlay */
+  font-size: 20px;
+  font-weight:bold;
+  color: #003B5C;
+}
+@media screen and (max-width: 768px) {
+  .menu-icon {
+      display: block; /* Show the overlay on smaller devices */
+      width:100%;
+  }
+  .nav-links{
+    display:none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav.menu-icon {
+      margin-right:0px;
+      width:100%;
+  }
+}
+  /* Default styles for aside */
+
+.aside {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10%; /* Cover 10% of the right side */
+    min-width: unset; /* Set a minimum width */
+    height:100%;
+    background-color: #003B5C;;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    /* Add any other necessary styles */
+}
+.aside.scrolled:hover{
+  background-color: #003B5C;
+
+}
+
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+
+
+  /* Default styles for aside */
+
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+
+
+  .aside.scrolled {
+    background-color: whitesmoke; /* Change background color on scroll */
+    
+}
+  
+  .aside img {
+    width: 150px; /* adjust the width according to your logo size */
+    height: 150px; /* adjust the height according to your logo size */
+    margin-bottom: 20px;
+  }
+  
+  .aside h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .aside p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+
+
+.aside:hover #logoImage {
+  content: url('logo5.png'); /* Change the logo image source on hover */
+}
+.aside.logo {
+  width: 100px; /* adjust the width according to your logo size */
+  height: auto; /* adjust the height according to your logo size */
+  /* Add transition for smooth effect */
+}
+.aside.scrolled #logoImage {
+  filter: invert(20%) sepia(100%) saturate(1000%) hue-rotate(200deg) brightness(60%) contrast(100%);
+
+}
+.aside.scrolled #logoImage:hover {
+  content: url('logo5.png'); /* Change the logo image source on hover */
+
+}
+
+/* Optional animation */
+
+
+
+
+/* Change the filter to apply color change */
+
+  .carousel-container {
+    width: 90%;
+    margin: 0 auto;
+    margin-right:0;
+    position: relative;
+    overflow: hidden;
+    margin-left:0;
+    margin-top:0;
+  }
+  @media screen and (max-width: 768px) {
+    .carousel-container {
+      width:90%
+    }
+    
+  }
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  .carousel img {
+    width: 100%;
+    height: auto;
+    max-height: 600px; /* Adjust the height as needed */
+    margin-right: 10px; 
+  }
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .carousel-btn-left {
+    left: 10px;
+  }
+  .carousel-btn-right {
+    right: 10px;
+  }
+   /* New styles for the section */
+   .section-container001 {
+    text-align: left;
+    margin-top: 50px; /* Adjust as needed */
+    width:80%;
+    margin-left:50px;
+    margin-right:50px;
+  }
+  @media screen and (max-width: 768px) {
+    .section-container001 {
+      width:80%
+    }
+    
+  }
+  .section-container h4 {
+    display: inline-block;
+    padding: 0 10px;
+    background-color: white;
+    position: relative;
+    text-align:center;
+  }
+
+  .heading-with-lines {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+    font-size: x-large;
+  }
+  
+  .heading-with-lines::before,
+  .heading-with-lines::after {
+    content: "";
+    flex-grow: 1;
+    border-top: 1px solid grey;
+    margin: 0 10px;
+  }
+  .section-content {
+    margin-top: 20px;
+    padding: 20px;
+    font-size:large;
+    
+  }
+  .section-content002 {
+    margin-top: 20px;
+    padding: 20px;
+    width:80%;
+    margin-left:60px;
+    margin-right:60px;
+    text-align: center;
+  }
+  @media screen and (max-width: 768px) {
+    .section-content002 {
+      width:70%
+    }
+    
+  }
+  .footer {
+    background-color:#003B5C;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width:90%;
+    margin-top: auto;
+  }
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align:left;
+    color:white;
+  }
+  .footer-column {
+    flex: 1;
+    margin-bottom: 20px;
+    
+    
+  }
+  .footer-column:third-child {
+    flex: 1; /* Twice the size of other columns */
+  }
+  .footer-column h4 {
+    margin-top: 0;
+  }
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-column li {
+    margin-bottom: 10px;
+   
+  }
+  .footer-column li a{
+    text-decoration: none;
+   
+  }
+  
+  
+  
+
+.subscribe-form input[type="email"] {
+    
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    padding-right: 10px;
+}
+
+.subscribe-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    /* Adjust width as needed */
+}
+
+.subscribe-form button:hover {
+    background-color: #45a049;
+}
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  width:85%;
+}
+/* Default styles for card section */
+/* Default styles for card */
+
+
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media screen and (max-width: 768px) {
+  .card-section {
+      flex-direction: column; /* Stack cards vertically on smaller screens */
+      align-items: center; /* Center cards horizontally */
+  }
+}
+
+
+.card {
+  width: 30%;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media screen and (max-width: 768px) {
+  .card {
+      width: calc(100% - 20px); /* Adjust width to fit the screen width with margin */
+      height: auto; /* Allow height to adjust based on content */
+      margin: 20px auto; /* Center cards horizontally with margin */
+      /* Add any other necessary styles */
+  }
+}
+
+.card-image {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  margin-bottom: 20px;
+}
+.two-card-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width:70%;
+ 
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* Default styles for card section */
+/* Default styles for card */
+
+
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media screen and (max-width: 768px) {
+  .two-card-section {
+      flex-direction: column; /* Stack cards vertically on smaller screens */
+      align-items: center; 
+      margin-top:50px;/* Center cards horizontally */
+  }
+}
+
+
+.card02 {
+  width: 45%; /* Adjust width as needed */
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media screen and (max-width: 768px) {
+  .card02 {
+      width: calc(100% - 20px); /* Adjust width to fit the screen width with margin */
+      height: auto; /* Allow height to adjust based on content */
+      margin: 20px auto; /* Center cards horizontally with margin */
+      /* Add any other necessary styles */
+  }
+}
+
+.card-title02 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid #007bff; /* Change color as needed */
+  width: 50px;
+  margin: 10px 0;
+}
+
+.card-description02 {
+  margin-bottom: 20px;
+}
+
+.action-button02 {
+  padding: 10px 20px;
+  background-color:#556b2f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-button02 span {
+  margin-left: 5px;
+}
+
+.action-button02:hover {
+  background-color: #BAB86C;
+}
+
+.action-button {
+  padding: 10px 20px;
+  background-color:#556b2f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-button span {
+  margin-left: 5px;
+}
+
+.action-button:hover {
+  background-color: #BAB86C;
+}
+.one-card-section {
+  text-align: center; /* Center the card horizontally */
+  padding: 20px;
+  width:90%;
+}
+
+.card03 {
+  width: 300px; /* Adjust width as needed */
+  margin: 0 auto; /* Center the card horizontally */
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensure the image does not overflow */
+}
+
+.card-image03 {
+  width: 100%; /* Ensure the image fills the card container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any residual whitespace */
+}
+.image-with-quote {
+  position: relative;
+  height: 100vh; /* Set the height of the section to viewport height */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width:90%;
+  z-index: -1;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.quote-container {
+  position: absolute;
+  text-align: center;
+}
+
+.quote {
+  font-size: 24px;
+  font-style: italic;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 20px;
+}
+
+.two-part-section {
+  display: flex;
+  height: 100vh; 
+  width:80%;/* Set height to viewport height */
+  border-radius:10px;
+  background-color:#fff;
+  justify-content:center;
+}
+
+.left-part {
+  flex: 1; /* Left part takes 50% of the space */
+  padding: 20px;
+}
+
+.right-part {
+  flex: 1; /* Right part takes 50% of the space */
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Center the card horizontally */
+  align-items: center; /* Center the card vertically */
+}
+
+.card05 {
+  width: 300px; /* Adjust card width as needed */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden; /* Ensure content does not overflow */
+   /* Remove any residual whitespace */
+
+}
+
+.card-image05 {
+  width: 300px;
+  height: 400px;
+  display: block;
+}
+
+.card-description05{
+  padding: 10px;
+  text-align: center;
+}
+
+
+.image-text-container {
+  text-align: center;
+  
+}
+
+.image04 {
+  width: 200px; /* Adjust size as needed */
+  height: auto; 
+  display: flex;/* Maintain aspect ratio */
+}
+main {
+  padding: 40px;
+}
+
+.project-description {
+  margin-bottom: 30px;
+  width:80%;
+  background-color:white;
+  padding:10px;
+  border-radius:10px;
+}
+
+.donate-section {
+  text-align: center;
+  background-color:#fff;
+  width:80%;
+  padding:20px;
+  border-radius:10px;
+}
+
+.donate-button {
+  background-color:#556b2f;
+
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.donate-button:hover {
+  background-color: #BAB86C;
+
+}
+.image-gallery{
+  width:90%;
+  margin-left: 5%;
+}
+.image-gallery img {
+  width: 250px;  /* Adjust percentage as needed */
+  height: auto;
+}
+.contact-info,
+.contact-form {
+  margin-bottom: 30px;
+  background-color: white; /* Light background color for sections */
+  padding: 20px;
+  border-radius: 5px; /* Add subtle border radius */
+  width:80%;
+}
+
+.contact-info ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-form label {
+  display: block; /* Display labels on separate lines */
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%; /* Make form fields full width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px; /* Add subtle border radius */
+}
+
+.contact-form textarea {
+  height: 100px; /* Set a height for the message textarea */
+}
+
+.contact-form button {
+  background-color:#556b2f;
+
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Add some margin above the button */
+}
+
+.contact-form button:hover {
+  background-color: #BAB86C;
+}
+
+
+
+  
+  /* Mobile Responsive Styles */
+  @media only screen and (max-width: 768px) {
+    
+    .logo-and-heading {
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo {
+      width: 50px; /* adjust the width according to your logo size */
+      height: 50px; /* adjust the height according to your logo size */
+      margin-right: 10px;
+    }
+    .heading {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0;
+    }
+    
+      .aside img {
+        width: 50px; /* adjust the width according to your logo size */
+        height: 50px; /* adjust the height according to your logo size */
+        margin-bottom: 20px;
+      }
+      .aside h2 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      .aside p {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      .carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 1em 0;
+      }
+      .carousel-item {
+        flex: 0 0 100%;
+        scroll-snap-align: start;
+      }
+      .carousel-item img {
+        width: 100%;
+        height: auto;
+      }
+      .social-links li {
+        margin-bottom: 1rem;
+        display:inline-block;
+        margin-right:10px;
+      }
+  }
+  .accordion-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top:100px;
+    margin-bottom: 100px;
+    background-color:whitesmoke;
+    border-radius:10px;
+}
+
+.accordion-button {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: background-color 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-button:hover {
+    background-color: #ddd;
+}
+
+.accordion-content {
+    padding: 0 15px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+.accordion-content p {
+    margin: 15px 0;
+}
+
+.arrow {
+    transition: transform 0.2s ease;
+}
+
+.accordion-button.active .arrow {
+    transform: rotate(90deg);
+}

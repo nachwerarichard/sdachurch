@@ -1,0 +1,175 @@
+<html>
+    <header>
+
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXGEL0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seventh-day Adventist Church Mbale Central</title>
+    <link rel="icon" href="tab.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i|Noto+Serif:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.adventist.org/alps/3/latest/css/main.css" media="all">
+    <script src="//cdn.adventist.org/alps/3/latest/js/head-script.min.js" type="text/javascript"></script>
+    </header>
+    <body>
+        <nav class="nav">
+            <div class="logo-and-heading">
+              <img src="logo5.png" alt="Logo" class="logo" />
+              <h1 class="heading">Seventh-day Adventist <br>Church Mbale Central</h1>
+            </div>
+            <div class="social-links">
+              <a href="#">Facebook</a>
+              <a href="#">Twitter</a>
+              <a href="#">Instagram</a>
+          </div>
+            <ul>
+                <li><a href="home.html">Home▾</a></li>
+                <li><a href="about.html">Our Church▾</a></li>
+                <li><a href="contact.html" class="active">Contact Us▾</a></li>
+                <li><a href="project.html">Projects▾</a></li>
+  
+              </ul>
+        </nav>
+        <div class="overlay" id="overlay">
+          <div class="overlay-content">
+              <div class="logo-container">
+                  <img src="logo5.png" alt="Logo">
+                  <span class="logo-text">Seventh-day Adventist Chuch</span>
+              </div>
+              <a href="home.html" >Home▾</a>
+              <a href="about.html">Our Church▾</a>
+              <a href="contact.html" class="active">Contact Us</a>
+              <a href="project.html">Projects▾</a>
+              <a href="gallery.html">Gallery▾</a>
+              <!-- Add more links as needed -->
+          </div>
+      </div>
+      <div class="menu-icon" id="menu-icon">&#9776;</div>
+        
+      
+        <h1 style="text-align: center;margin-bottom: 1rem;">Contact Us</h1>
+        <main style="padding:20px;">
+          <section class="contact-info">
+              <h3>Contact Information</h3>
+              <p>We welcome you to contact us! You can reach us through the following methods:</p>
+              <ul>
+                  <li>Phone: +256 758577889</li>
+                  <li>Email:<a href="sdambalecentralchurch@gmail.com">sdambalecentralchurch@gmail.com</a></li>
+                  <li>Address:Plot 1-13,Somero Road, Nyanza Cell Industrial City Division,Mbale City. </li>
+              </ul>
+              <p>Church Hours</p>
+              <p>Sabbath services, 8:30am - 5:30pm</p>
+              <p>Friday vespers, 4:30pm - 6:00pm</p>
+              <p>Wednesday(mid-week fellowship), 3:00pm - 5:30pm</p>
+          </section>
+          <section class="contact-form">
+              <h3>Send Us a Message</h3>
+              <form action="mailto:[Church email address]" method="post">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                  <br>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                  <br>
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+                  <br>
+                  <button type="submit">Send Message</button>
+              </form>
+          </section>
+        </main>
+        <aside class="aside" id="myAside">
+          <img id="logoImage" src="logo5.png" alt="Logo" class="logo" />
+        </aside>
+          <script>
+            
+        document.addEventListener("DOMContentLoaded", function() {
+    const menuIcon = document.getElementById("menu-icon");
+    const overlay = document.getElementById("overlay");
+
+    menuIcon.addEventListener("click", function() {
+        overlay.style.display = "block";
+    });
+
+    overlay.addEventListener("click", function() {
+        overlay.style.display = "none";
+    });
+    });
+
+  
+          </script>
+
+
+                <script>
+                          var scrollingTimeout;
+                          var logoImage = document.getElementById('logoImage');
+
+                          window.addEventListener('scroll', function() {
+                          clearTimeout(scrollingTimeout); // Clear previous timeout
+
+    // Add a class to initiate the transition
+                           logoImage.classList.add('transitioning');
+
+    // Set a timeout to remove the class if scrolling stops
+                           scrollingTimeout = setTimeout(function() {
+                           logoImage.classList.remove('transitioning');
+                           }, 10000); // Adjust the duration to match the transition duration
+
+                          var aside = document.getElementById('myAside');
+                          if (window.scrollY > 200) {
+                            aside.classList.add('scrolled');
+        // Change the logo color to blue when scrolled
+                          logoImage.style.filter = 'invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%)'; // Reset previous effects
+                          logoImage.style.color = '#2243b6'; // Replace with the actual blue color code
+
+                          } else {
+                          aside.classList.remove('scrolled');
+        // Revert to original logo color when scrolled to top
+                          logoImage.style.filter = 'none'; // Remove any filter applied
+                          }
+                          });
+                </script>
+    </body>
+
+    
+    <footer class="footer">
+            <div class="footer-columns">
+              <div class="footer-column">
+                <div class="logo-and-heading">
+                  <img src="logo5.png" alt="Logo" class="logo" />
+                </div>
+                <div class="logo-and-heading">
+                  <h1 class="heading">Seventh-day Adventist <br>Church Mbale Central</h1>
+                </div>
+                <p>© 2023 SDA Church Mbale Central.</p>
+                <p>Plot 1-13,Somero Road, Nyanza Cell Industrial City Division,Mbale City.</p>
+              </div>
+              <div class="footer-column">
+                <h2>Links</h2>
+                <ul>
+                   <li><a href="home.html">Home </a></li>
+                      <li><a href="about.html">Our Church </a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                      <li><a href="project.html">Projects</a></li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+                <div class="footer-column">
+                  <h2>Social</h2>
+                  <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter </a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Tiktok</a></li>
+
+                  </ul>
+              </div>
+              <div class="footer-column">
+                <h2> Newsletter</h2> <!-- New header -->
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+                <p>Join Us For Fellowship Every Tuesday In Our different Family Support Groups, and Friday for Vespers from 8:00pm - 9:00pm via our church google meet platform</p>
+              </div>
+            </div>
+    </footer>
+
+    
+</html>
