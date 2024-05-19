@@ -941,8 +941,8 @@ main {
     }
     
       .aside img {
-        width: 100px; /* adjust the width according to your logo size */
-        height: 100px; /* adjust the height according to your logo size */
+        width: 50px; /* adjust the width according to your logo size */
+        height: 50px; /* adjust the height according to your logo size */
         margin-bottom: 20px;
       }
       .aside h2 {
