@@ -507,6 +507,12 @@
     text-decoration: none;
    
   }
+  @media screen and (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center; /* Center cards horizontally */
+    }
+  }
   
   
   
@@ -784,6 +790,14 @@ hr {
    /* Remove any residual whitespace */
 
 }
+.card06 {
+  width: 300px; /* Adjust card width as needed */
+  border-radius: 5px;
+  align-items: left;
+  overflow: hidden; /* Ensure content does not overflow */
+   /* Remove any residual whitespace */
+
+}
 
 .card-image05 {
   width: 300px;
@@ -927,8 +941,8 @@ main {
     }
     
       .aside img {
-        width: 50px; /* adjust the width according to your logo size */
-        height: 50px; /* adjust the height according to your logo size */
+        width: 100px; /* adjust the width according to your logo size */
+        height: 100px; /* adjust the height according to your logo size */
         margin-bottom: 20px;
       }
       .aside h2 {
