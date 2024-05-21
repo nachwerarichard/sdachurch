@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+}
+
+.nav-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-items li {
+    margin-left: 20px;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-items li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MyLogo</div>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+        <ul class="nav-items" id="nav-items">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            var navItems = document.getElementById('nav-items');
+            var menuItems = document.getElementById('menu-icon');
+
+            if (navItems.style.display === "block") {
+                navItems.style.display = "none";
+            } else {
+                navItems.style.display = "block";
+                menuItems.style.display = "none" ;
+            }
+        });
+    </script>
+</body>
+</html>

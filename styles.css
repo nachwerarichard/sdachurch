@@ -60,8 +60,8 @@
 }
 
 .logo {
-    width: 80px; /* adjust the width according to your logo size */
-    height: 80px; /* adjust the height according to your logo size */
+    width: 40px; /* adjust the width according to your logo size */
+    height: 40px; /* adjust the height according to your logo size */
     margin-right: 20px;
 }
 
@@ -97,11 +97,22 @@
   display: flex;
   justify-content: center; /* Center the links horizontally */
 }
+.nav-links01 {
+  display: none;
+  justify-content:right;
+  width:35%;
+  right:0;
+  margin-top: 0px; /* Center the links horizontally */
+}
+.menu{
+  bottom: 0 ;
+  right:0;
+}
 
 .nav-links ul {
   list-style: none; /* Remove default list styles */
   padding: 0; /* Remove dnefault padding */
-  margin: 0; /* Remove default margin */
+  margin-bottom: 0; /* Remove default margin */
 }
 
 .nav-links li {
@@ -112,14 +123,21 @@
 
 @media screen and (max-width: 768px) {
   .logo-and-heading {
-      display: block; /* Hide the navigation links on smaller screens */
+      display: flex;
+      flex-direction: row; /* Hide the navigation links on smaller screens */
       align-items:center;
+      margin-left:10px;
   }
   .logo-and-head {
     display: block; /* Hide the navigation links on smaller screens */
     align-items:center;
 }
-  
+  .nav-links01{
+    display: block;
+    align-items: right;
+    
+    
+  }
 }
 @media screen and (max-width: 768px) {
   .nav-links {
@@ -204,6 +222,8 @@
   position:absolute;
   top: 0;
   right:0;
+  bottom: 0;
+  left: 0;
   width:100%;
   height: 100%;
   background-color: rgba(6, 3, 51, 1.0); /* Semi-transparent black */
@@ -262,30 +282,34 @@
 .menu-icon {
   display:none;
   position: absolute;
-  top: 0px;
+  top:10px;
   right: 0px;
-  width:100%;
+  width:40%;
   cursor: pointer;
-  z-index: 2000; /* Ensure menu icon is above overlay */
+  z-index: 200; /* Ensure menu icon is above overlay */
   font-size: 20px;
   font-weight:bold;
   color: #003B5C;
 }
 @media screen and (max-width: 768px) {
   .menu-icon {
-      display: block; /* Show the overlay on smaller devices */
-      width:100%;
+      display: block;
+      font-size: small; /* Show the overlay on smaller devices */
   }
   .nav-links{
     display:none;
   }
-}
-@media screen and (max-width: 768px) {
-  .nav.menu-icon {
-      margin-right:0px;
-      width:100%;
+  .logo-and-heading h1{
+    font-size: small;
+  }
+  .logo-and-heading img{
+    width:80px;
+    height:80px;
+    left:0;
+    bottom:0;
   }
 }
+
   /* Default styles for aside */
 
 .aside {
@@ -601,9 +625,8 @@
 .two-card-section {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  width:70%;
- 
+  padding-right: 40px;
+  width:80%;
   padding: 20px;
   margin-top: 50px;
 }
@@ -746,7 +769,7 @@ hr {
 
 .two-part-section {
   display: flex;
-  height: 100vh; 
+   margin-left:20px;
   width:80%;/* Set height to viewport height */
   border-radius:10px;
   background-color:#fff;
@@ -757,7 +780,6 @@ hr {
   .two-part-section {
     flex-direction: column;
     align-items: center;
-    
   }
   .left-part{
     flex-direction: column;
@@ -791,9 +813,11 @@ hr {
 
 }
 .card06 {
-  width: 300px; /* Adjust card width as needed */
-  border-radius: 5px;
+  width: 300px; 
+  background-color: whitesmoke;/* Adjust card width as needed */
+  border-radius: 10px;
   align-items: left;
+  font-size:larger;
   overflow: hidden; /* Ensure content does not overflow */
    /* Remove any residual whitespace */
 
@@ -922,7 +946,7 @@ main {
   @media only screen and (max-width: 768px) {
     
     .logo-and-heading {
-      flex-direction: column;
+      flex-direction:row;
       align-items: center;
     }
     .logo-and-head {
