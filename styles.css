@@ -351,13 +351,10 @@
   .aside img {
     width: 150px; /* adjust the width according to your logo size */
     height: 150px; /* adjust the height according to your logo size */
-    margin-bottom: 20px;
   }
   @media screen and (max-width: 768px) {
     .aside img {
-      left: 0px;
-      right: 0px;
-      top: 0px;
+      margin:auto;
     }
     
   }
