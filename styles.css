@@ -292,9 +292,9 @@
 }
 @media screen and (max-width: 768px) {
   .menu-icon {
-      width:40%;
       display: block;
-      font-size: small; /* Show the overlay on smaller devices */
+      font-size: small; 
+      width:30%;/* Show the overlay on smaller devices */
   }
   .nav-links{
     display:none;
