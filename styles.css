@@ -54,9 +54,10 @@
   
 }
 .logo-and-heading img{
-  width:200px;
-  height:200px;
-  margin-bottom: 40px;
+  width:150px;
+  height:150px;
+  margin-bottom: 30px;
+  margin-top:10px;
 
 }
 
@@ -304,8 +305,9 @@
     font-size: small;
   }
   .logo-and-heading img{
-    width:80px;
-    height:80px;
+    width:40px;
+    height:40px;
+    
     left:0;
     bottom:0px;
   }
