@@ -353,6 +353,14 @@
     height: 150px; /* adjust the height according to your logo size */
     margin-bottom: 20px;
   }
+  @media screen and (max-width: 768px) {
+    .aside img {
+      left: 0px;
+      right: 0px;
+      top: 0px;
+    }
+    
+  }
   
   .aside h2 {
     font-size: 18px;
@@ -402,7 +410,7 @@
   }
   @media screen and (max-width: 768px) {
     .carousel-container {
-      width:90%
+      width:90%;
     }
     
   }
@@ -489,7 +497,7 @@
   }
   @media screen and (max-width: 768px) {
     .section-content002 {
-      width:70%
+      width:70%;
     }
     
   }
