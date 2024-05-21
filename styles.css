@@ -56,6 +56,7 @@
 .logo-and-heading img{
   width:200px;
   height:200px;
+  margin-bottom: 40px;
 
 }
 
@@ -69,7 +70,7 @@
 .logo-and-heading h1 {
   margin-right: 10px; /* Adjust margin as needed */
   color:whitesmoke;
-  margin-bottom: 0;
+  margin-bottom: 0px;
   font-weight: lighter;
 }
 
@@ -306,7 +307,7 @@
     width:80px;
     height:80px;
     left:0;
-    bottom:0;
+    bottom:0px;
   }
 }
 
@@ -965,8 +966,8 @@ main {
     }
     
       .aside img {
-        width: 20; /* adjust the width according to your logo size */
-        height: 20; /* adjust the height according to your logo size */
+        width: 40; /* adjust the width according to your logo size */
+        height: 40; /* adjust the height according to your logo size */
       }
       .aside h2 {
         font-size: 18px;
