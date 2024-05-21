@@ -968,8 +968,8 @@ main {
     }
     
       .aside img {
-        width: 40; /* adjust the width according to your logo size */
-        height: 40; /* adjust the height according to your logo size */
+        width: 100; /* adjust the width according to your logo size */
+        height: 100; /* adjust the height according to your logo size */
       }
       .aside h2 {
         font-size: 18px;
