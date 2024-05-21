@@ -284,7 +284,6 @@
   position: absolute;
   top:10px;
   right: 0px;
-  width:40%;
   cursor: pointer;
   z-index: 200; /* Ensure menu icon is above overlay */
   font-size: 20px;
@@ -293,6 +292,7 @@
 }
 @media screen and (max-width: 768px) {
   .menu-icon {
+      width:40%;
       display: block;
       font-size: small; /* Show the overlay on smaller devices */
   }
