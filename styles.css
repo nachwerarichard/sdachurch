@@ -368,7 +368,7 @@
   content: url('logo5.png'); /* Change the logo image source on hover */
 }
 .aside.logo {
-  width: 100px; /* adjust the width according to your logo size */
+  width: auto; /* adjust the width according to your logo size */
   height: auto; /* adjust the height according to your logo size */
   /* Add transition for smooth effect */
 }
@@ -965,9 +965,8 @@ main {
     }
     
       .aside img {
-        width: 50px; /* adjust the width according to your logo size */
-        height: 50px; /* adjust the height according to your logo size */
-        margin-bottom: 20px;
+        width: 20; /* adjust the width according to your logo size */
+        height: 20; /* adjust the height according to your logo size */
       }
       .aside h2 {
         font-size: 18px;
